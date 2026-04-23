@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Hello World Premium",
+  "version": "1.0",
+  "description": "A premium Hello World trigger for MacCtrl+Period",
+  "permissions": ["activeTab", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "trigger-hello": {
+      "suggested_key": {
+        "default": "Ctrl+Period",
+        "mac": "MacCtrl+Period"
+      },
+      "description": "Show Hello World"
+    }
+  }
+}
