@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
 
+
 .tui-board-container {
     position: fixed;
     bottom: 50px;
@@ -59,10 +60,29 @@
 }
 
 /* Remove outer borders for a cleaner TUI look */
-.tui-cell:nth-child(1), .tui-cell:nth-child(2), .tui-cell:nth-child(3) { border-top: none; }
-.tui-cell:nth-child(3), .tui-cell:nth-child(6), .tui-cell:nth-child(9) { border-right: none; }
-.tui-cell:nth-child(7), .tui-cell:nth-child(8), .tui-cell:nth-child(9) { border-bottom: none; }
-.tui-cell:nth-child(1), .tui-cell:nth-child(4), .tui-cell:nth-child(7) { border-left: none; }
+.tui-cell:nth-child(1),
+.tui-cell:nth-child(2),
+.tui-cell:nth-child(3) {
+    border-top: none;
+}
+
+.tui-cell:nth-child(3),
+.tui-cell:nth-child(6),
+.tui-cell:nth-child(9) {
+    border-right: none;
+}
+
+.tui-cell:nth-child(7),
+.tui-cell:nth-child(8),
+.tui-cell:nth-child(9) {
+    border-bottom: none;
+}
+
+.tui-cell:nth-child(1),
+.tui-cell:nth-child(4),
+.tui-cell:nth-child(7) {
+    border-left: none;
+}
 
 .tui-scanline {
     position: absolute;
@@ -70,10 +90,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(
-        rgba(18, 16, 16, 0) 50%, 
-        rgba(0, 0, 0, 0.1) 50%
-    );
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%,
+            rgba(0, 0, 0, 0.1) 50%);
     background-size: 100% 4px;
     pointer-events: none;
     border-radius: inherit;
